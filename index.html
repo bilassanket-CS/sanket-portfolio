@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sanket Bilas — A-Level Computer Science student portfolio featuring web development, Python, AI/ML and OCR NEA projects."
+    />
+    <meta
+      name="keywords"
+      content="Sanket Bilas, A Level Computer Science, student developer, Python, JavaScript, AI, machine learning, OCR NEA"
+    />
+    <meta name="author" content="Sanket Bilas" />
+    <meta
+      property="og:title"
+      content="Sanket Bilas | Computer Science Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="A-Level Computer Science student building practical web, Python and AI/ML projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sanketbilas.online" />
+    <title>Sanket Bilas | Computer Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Sanket Bilas home">
+          <span class="brand-mark">SB</span>
+          <span>Sanket Bilas</span>
+        </a>
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#journey">Journey</a>
+          <a class="nav-cta" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span> A-Level Computer Science Student ·
+            Portfolio showcase
+          </p>
+          <h1>
+            I build
+            <span
+              class="hero-animated-word"
+              data-words='["web experiences","AI products","practical tools","clean interfaces"]'
+            ></span>
+            with <span class="gradient-text">code, data and AI.</span>
+          </h1>
+          <p class="hero-lead">
+            This portfolio highlights the web apps, Python tools, algorithms and
+            AI experiments I’ve built while growing my software engineering
+            skills.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects"
+              >Explore my work <span>↗</span></a
+            >
+            <a
+              class="button secondary"
+              href="assets/Sanket-Bilas-CV.pdf"
+              target="_blank"
+              rel="noopener"
+              >View CV</a
+            >
+          </div>
+          <div class="hero-meta">
+            <div>
+              <strong>A-Level</strong><span>Maths · Further Maths · CS</span>
+            </div>
+            <div>
+              <strong>Focus</strong><span>AI/ML · Software Engineering</span>
+            </div>
+            <div>
+              <strong>Based in</strong><span>London, United Kingdom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="code-window tilt-card">
+            <div class="window-bar">
+              <span></span><span></span><span></span
+              ><small>portfolio_system.py</small>
+            </div>
+            <pre><code><span class="code-purple">class</span> <span class="code-blue">PortfolioEngine</span>:
+    <span class="code-purple">def</span> <span class="code-yellow">showcase</span>(self, projects):
+        highlights = self.<span class="code-blue">select</span>(projects)
+        <span class="code-purple">return</span> self.<span class="code-blue">rank</span>(highlights)
+
+<span class="code-comment"># Each project demonstrates a different strength.</span></code></pre>
+            <div class="code-result">
+              <span>✓</span> UI aligned with the landing page experience
+            </div>
+          </div>
+          <div class="floating-chip chip-python">Python</div>
+          <div class="floating-chip chip-ai">AI / ML</div>
+          <div class="floating-chip chip-web">Web</div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Technologies">
+        <div class="marquee-track">
+          <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i
+          ><span>JavaScript</span><i>✦</i><span>Python</span><i>✦</i
+          ><span>Flask</span><i>✦</i><span>SQL</span><i>✦</i><span>Git</span
+          ><i>✦</i><span>Machine Learning</span><i>✦</i> <span>HTML5</span
+          ><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i
+          ><span>Python</span><i>✦</i><span>Flask</span><i>✦</i><span>SQL</span
+          ><i>✦</i><span>Git</span><i>✦</i><span>Machine Learning</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · About me</p>
+          <h2>Curious about how intelligent software solves real problems.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card about-copy reveal">
+            <p>
+              My interest in computer science began with understanding how
+              algorithms turn complex tasks into precise, repeatable steps. I
+              now apply that curiosity to web applications, object-oriented
+              programs, data structures and early machine-learning models.
+            </p>
+            <p>
+              Alongside A-Level Computer Science, Mathematics and Further
+              Mathematics, I independently study through coding courses, project
+              work and problem-solving challenges. My aim is to keep building
+              projects that connect technical depth with real-world usefulness.
+            </p>
+            <a class="text-link" href="#journey"
+              >See my learning journey <span>→</span></a
+            >
+          </article>
+          <div class="stats-grid reveal">
+            <div class="stat-card">
+              <strong data-count="12">0</strong><span>Projects completed</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="5">0</strong><span>Core technologies</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="150">0</strong><span>Algorithm problems</span>
+            </div>
+            <div class="stat-card">
+              <strong data-count="3">0</strong><span>Academic subjects</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">02 · Skills</p>
+            <h2>Tools I use to turn ideas into working systems.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-icon">&lt;/&gt;</div>
+              <h3>Frontend Development</h3>
+              <p>
+                Responsive, accessible interfaces with semantic HTML, modern CSS
+                and interactive JavaScript.
+              </p>
+              <div class="tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">Py</div>
+              <h3>Python &amp; Backend</h3>
+              <p>
+                Object-oriented programs, algorithms, REST-style applications,
+                validation and database integration.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>Flask</span><span>SQLite</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">AI</div>
+              <h3>Data &amp; Machine Learning</h3>
+              <p>
+                Preparing data, comparing models, evaluating accuracy and
+                explaining predictions responsibly.
+              </p>
+              <div class="tags">
+                <span>pandas</span><span>scikit-learn</span><span>NumPy</span>
+              </div>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">⌘</div>
+              <h3>Computer Science</h3>
+              <p>
+                Algorithms, data structures, computational thinking, testing,
+                decomposition and abstraction.
+              </p>
+              <div class="tags">
+                <span>OOP</span><span>Algorithms</span><span>Git</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="eyebrow">03 · Selected projects</p>
+            <h2>
+              Projects that demonstrate progression, not just finished screens.
+            </h2>
+          </div>
+          <div
+            class="project-filters"
+            role="group"
+            aria-label="Filter projects"
+          >
+            <button type="button" class="filter-btn active" data-filter="all">
+              All
+            </button>
+            <button type="button" class="filter-btn" data-filter="web">
+              Web
+            </button>
+            <button type="button" class="filter-btn" data-filter="python">
+              Python
+            </button>
+            <button type="button" class="filter-btn" data-filter="ai">
+              AI/ML
+            </button>
+            <button type="button" class="filter-btn" data-filter="nea">
+              NEA
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article
+            class="project-card featured reveal"
+            data-category="python ai nea"
+          >
+            <div class="project-art art-purple">
+              <div class="dashboard-mockup">
+                <div class="mock-sidebar">
+                  <b>ReviseAI</b><span></span><span></span><span></span
+                  ><span></span>
+                </div>
+                <div class="mock-main">
+                  <div class="mock-top"></div>
+                  <div class="mock-chart">
+                    <i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="mock-row"><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">
+                <span>Featured OCR NEA</span><time>2026</time>
+              </div>
+              <h3>Exam Question Recommendation System</h3>
+              <p>
+                An adaptive revision platform that recommends questions by topic
+                weakness, prior accuracy, difficulty and spaced-repetition
+                priority. It also includes student progress tracking and teacher
+                analytics.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>Flask</span><span>SQLite</span
+                ><span>Recommendation Logic</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  aria-label="Open Exam Question Recommendation System demo"
+                  >Live demo ↗</a
+                ><a
+                  href="https://github.com/bilassanket-CS/NEA-Exam-Recommendation-System"
+                  aria-label="Open source code on GitHub"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ai python">
+            <div class="project-art art-blue">
+              <div class="neural-art">
+                <span></span><span></span><span></span><span></span><span></span
+                ><span></span><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">
+                <span>AI / Machine Learning</span><time>2026</time>
+              </div>
+              <h3>Student Grade Predictor</h3>
+              <p>
+                Compares regression models to estimate academic outcomes from
+                study habits and assessment data, with feature importance and
+                limitations clearly reported.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>pandas</span><span>scikit-learn</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Case study ↗</a><a href="#">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-art art-cyan">
+              <div class="weather-ui">
+                <div>London</div>
+                <strong>18°</strong><small>Partly cloudy</small>
+                <section>
+                  <span>MON<br />17°</span><span>TUE<br />19°</span
+                  ><span>WED<br />16°</span>
+                </section>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">
+                <span>Web Application</span><time>2025</time>
+              </div>
+              <h3>Smart Weather Dashboard</h3>
+              <p>
+                A responsive dashboard using a weather API, geolocation,
+                searchable cities, saved favourites and accessible loading and
+                error states.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Live demo ↗</a><a href="#">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="python nea">
+            <div class="project-art art-orange">
+              <div class="path-grid">
+                <span class="start">A</span><i></i><i></i><i></i><i></i><i></i
+                ><i></i><i></i><span class="end">B</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">
+                <span>Algorithm Visualiser</span><time>2025</time>
+              </div>
+              <h3>Pathfinding Visualiser</h3>
+              <p>
+                Interactive visualisation of Dijkstra’s and A* algorithms,
+                allowing users to place obstacles and compare explored nodes,
+                route length and execution time.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>Algorithms</span
+                ><span>Canvas</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Live demo ↗</a><a href="#">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="python ai nea">
+            <div class="project-art art-pink">
+              <div class="cv-ui">
+                <div class="paper-lines"><i></i><i></i><i></i><i></i></div>
+                <div class="score-ring">86%</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">
+                <span>Suggested NEA</span><time>Concept</time>
+              </div>
+              <h3>Smart Job Matching &amp; CV Analyser</h3>
+              <p>
+                Extracts skills from CV text, compares them with role
+                requirements and explains the match score while highlighting
+                missing competencies.
+              </p>
+              <div class="tags">
+                <span>Python</span><span>NLP</span><span>Flask</span
+                ><span>SQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Design notes ↗</a><a href="#">Prototype ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web python nea">
+            <div class="project-art art-green">
+              <div class="finance-chart">
+                <strong>£12,480</strong
+                ><svg viewbox="0 0 300 100" preserveaspectratio="none">
+                  <polyline
+                    points="0,88 35,75 70,80 105,48 140,60 175,32 210,42 250,16 300,22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="5"
+                  ></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-label">
+                <span>Suggested NEA</span><time>Concept</time>
+              </div>
+              <h3>Cryptocurrency Portfolio Tracker</h3>
+              <p>
+                Tracks holdings, price history, profit and loss, risk exposure
+                and alerts using secure authentication and live market data.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>Python</span><span>API</span
+                ><span>Database</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Design notes ↗</a><a href="#">Prototype ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">04 · Learning journey</p>
+            <h2>
+              Building strong foundations for university-level computer science.
+            </h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-year">2026–27</div>
+              <div>
+                <h3>University preparation</h3>
+                <p>
+                  Developing an advanced portfolio, preparing for admissions
+                  tests and strengthening mathematical problem-solving for
+                  Computer Science applications.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-year">2025–27</div>
+              <div>
+                <h3>A-Level studies</h3>
+                <p>
+                  Computer Science, Mathematics and Further Mathematics, with
+                  particular interest in algorithms, calculus, matrices,
+                  modelling and computational methods.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-year">Ongoing</div>
+              <div>
+                <h3>Independent development</h3>
+                <p>
+                  Completing online courses, coding challenges, hackathons and
+                  self-directed projects while documenting progress through
+                  GitHub.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">05 · Contact</p>
+            <h2>Let’s build something useful together.</h2>
+            <p>
+              I’m interested in web development, AI-driven products and
+              ambitious student projects. If you’d like to collaborate or
+              discuss ideas, feel free to reach out.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="button primary"
+              href="mailto:sanket.bilas@sanketbilas.online"
+              >hello@sanketbilas.online</a
+            >
+            <div class="social-links">
+              <a
+                href="https://github.com/bilassanket-CS"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                >LinkedIn</a
+              >
+              <a
+                href="https://leetcode.com/u/SanketBilas/"
+                target="_blank"
+                rel="noopener"
+                >Leetcode</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <span>© <span id="year"></span> Sanket Bilas. All rights reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
