@@ -1,0 +1,51 @@
+name: Deploy to Hosting.com
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  deploy-hosting:
+    name: Deploy to sanketbilas.online
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare website files
+        run: |
+          mkdir -p deploy
+          cp index.html deploy/
+          cp styles.css deploy/
+          cp script.js deploy/
+          cp -r assets deploy/
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      - name: Deploy website using FTPS
+        env:
+          FTP_SERVER: ${{ secrets.HOSTING_FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.HOSTING_FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.HOSTING_FTP_PASSWORD }}
+        run: |
+          lftp <<EOF
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          set ssl:verify-certificate true
+
+          open -p 21 "$FTP_SERVER"
+          user "$FTP_USERNAME" "$FTP_PASSWORD"
+
+          mirror --reverse \
+                 --verbose \
+                 deploy/ /
+
+          bye
+          EOF
