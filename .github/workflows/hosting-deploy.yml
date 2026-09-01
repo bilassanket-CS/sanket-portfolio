@@ -22,6 +22,7 @@ jobs:
           cp index.html deploy/
           cp styles.css deploy/
           cp script.js deploy/
+          cp favicon.svg deploy/
           cp -r assets deploy/
 
       - name: Install lftp
