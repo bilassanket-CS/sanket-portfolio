@@ -11,7 +11,7 @@ Open `index.html` directly, or use VS Code Live Server.
 1. Replace all `href="#"` project and social links in `index.html`.
 2. Add a PDF CV at `assets/Sanket-Bilas-CV.pdf`.
 3. Replace sample project descriptions, dates and statistics with verified information.
-4. Update `hello@sanketbilas.online` if a different mailbox will be used.
+4. Update `sanket.bilas@sanketbilas.online` if a different mailbox will be used.
 5. Add screenshots or full project pages later if required.
 
 ## Deploy with Vercel
@@ -25,16 +25,19 @@ Open `index.html` directly, or use VS Code Live Server.
 7. Apply the DNS records Vercel displays at the domain registrar.
 
 Typical Vercel DNS configuration:
+
 - Apex domain: `A` record for `@` to `76.76.21.21`
 - `www`: `CNAME` to `cname.vercel-dns.com`
 
 Always use the exact records shown in the current Vercel dashboard because provider instructions can change.
 
-## Suggested repository structure for future projects
+## Project repositories
 
-- `/projects/exam-question-recommender/`
-- `/projects/grade-predictor/`
-- `/projects/weather-dashboard/`
-- `/projects/pathfinding-visualiser/`
+Each major portfolio project is maintained in its own GitHub repository:
 
-Each project can later receive its own case-study page with problem, analysis, design, implementation, testing and evaluation.
+- [Exam Question Recommendation System](https://github.com/bilassanket-CS/NEA-Exam-Recommendation-System)
+- [Student Grade Predictor](https://github.com/bilassanket-CS/StudentGradePredictor)
+- [Smart Weather Dashboard](https://github.com/bilassanket-CS/SmartWeatherDashboard)
+- [Pathfinding Visualiser](https://github.com/bilassanket-CS/AlgoPathfindVisualiser)
+
+The `sanket-portfolio` repository contains only the main portfolio website and links to the individual project repositories.
